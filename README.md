@@ -40,3 +40,19 @@ Result: The imported project is listed in the Project Explorer view and files ar
 **From IDE**
 
 After being done with the downloading and opening project, select **Build** option from **Product** menu. After compilation process, user can run Hmm-Swift.
+
+Detailed Description
+============
+
++ [Hmm](#hmm)
+
+## Hmm
+
+Hmm modelini üretmek için
+
+	init(states: Set<State>, observations: [[State]], emittedSymbols: [[Symbol]])
+
+
+Viterbi algoritması ile en olası State listesini elde etmek için
+
+	func viterbi(s: [Symbol]) -> [State]
